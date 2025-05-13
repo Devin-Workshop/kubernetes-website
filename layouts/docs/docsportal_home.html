@@ -1,0 +1,24 @@
+{{ define "main" }}
+    {{ template "docs-portal-content" . }}
+{{ end }}
+
+{{ define "content-id" }}content{{ end }}
+
+{{ define "docs-portal-content" }}
+  <section id="mainContent">
+  <div class="launch-content">
+    <p>{{ .Params.overview | safeHTML }}</p>
+    <br>
+    <div class="launch-cards">
+      {{ $page := (partial "docs/docs-portal-card" .) }}
+      {{ .Scratch.Set "html" $page }}
+      {{ $page }}
+    </div>
+  </div>
+</section>
+{{ end }}
+{{ define "hero" }}
+    <section class="header-hero text-white pb-4 light-text ">
+    <h1>{{ .Title }}</h1>
+    </section>
+{{ end }}
