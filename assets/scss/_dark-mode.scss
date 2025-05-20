@@ -1,0 +1,166 @@
+/* Site-wide dark mode styles */
+
+// Dark mode toggle button
+.btn.switch-theme {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  padding: 0;
+  margin-left: 0.5rem;
+  
+  i {
+    font-size: 1.2rem;
+  }
+}
+
+// Dark mode styles for auto detection
+@media (prefers-color-scheme: dark) {
+  body.theme-auto {
+    background-color: $dark-bg-color-1;
+    color: $dark-text-color-1;
+    
+    a {
+      color: $dark-text-color-2;
+      
+      &:hover {
+        color: lighten($dark-text-color-2, 10%);
+      }
+    }
+    
+    .navbar {
+      background-color: darken($dark-bg-color-1, 5%) !important;
+    }
+    
+    .td-sidebar {
+      background-color: $dark-bg-color-1;
+      border-right: 1px solid $dark-bg-color-2;
+    }
+    
+    .td-sidebar-nav a {
+      color: $dark-text-color-1;
+    }
+    
+    .td-sidebar-nav a.active {
+      color: $dark-text-color-2;
+    }
+    
+    pre, code {
+      background-color: darken($dark-bg-color-1, 3%);
+      color: #f8f8f8;
+    }
+    
+    .highlight pre {
+      background-color: darken($dark-bg-color-1, 3%);
+    }
+    
+    table {
+      color: $dark-text-color-1;
+    }
+    
+    table tr:nth-child(odd) > td {
+      background-color: rgba(255, 255, 255, 0.05);
+    }
+    
+    .td-page-meta, .td-page-meta a {
+      color: darken($dark-text-color-1, 15%);
+    }
+    
+    footer {
+      background-color: darken($dark-bg-color-1, 5%);
+      color: $dark-text-color-1;
+    }
+    
+    .btn.switch-theme {
+      color: $dark-text-color-1;
+      background-color: rgba(255, 255, 255, 0.1);
+      
+      &:hover {
+        background-color: rgba(255, 255, 255, 0.2);
+      }
+    }
+  }
+}
+
+// Same rules for enforced dark mode
+body.theme-dark {
+  background-color: $dark-bg-color-1;
+  color: $dark-text-color-1;
+  
+  a {
+    color: $dark-text-color-2;
+    
+    &:hover {
+      color: lighten($dark-text-color-2, 10%);
+    }
+  }
+  
+  .navbar {
+    background-color: darken($dark-bg-color-1, 5%) !important;
+  }
+  
+  .td-sidebar {
+    background-color: $dark-bg-color-1;
+    border-right: 1px solid $dark-bg-color-2;
+  }
+  
+  .td-sidebar-nav a {
+    color: $dark-text-color-1;
+  }
+  
+  .td-sidebar-nav a.active {
+    color: $dark-text-color-2;
+  }
+  
+  pre, code {
+    background-color: darken($dark-bg-color-1, 3%);
+    color: #f8f8f8;
+  }
+  
+  .highlight pre {
+    background-color: darken($dark-bg-color-1, 3%);
+  }
+  
+  table {
+    color: $dark-text-color-1;
+  }
+  
+  table tr:nth-child(odd) > td {
+    background-color: rgba(255, 255, 255, 0.05);
+  }
+  
+  .td-page-meta, .td-page-meta a {
+    color: darken($dark-text-color-1, 15%);
+  }
+  
+  footer {
+    background-color: darken($dark-bg-color-1, 5%);
+    color: $dark-text-color-1;
+  }
+  
+  .btn.switch-theme {
+    color: $dark-text-color-1;
+    background-color: rgba(255, 255, 255, 0.1);
+    
+    &:hover {
+      background-color: rgba(255, 255, 255, 0.2);
+    }
+  }
+}
+
+// Light mode styles
+body.theme-light {
+  background-color: #ffffff;
+  color: #333333;
+  
+  .btn.switch-theme {
+    color: #333333;
+    background-color: rgba(0, 0, 0, 0.1);
+    
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.2);
+    }
+  }
+}

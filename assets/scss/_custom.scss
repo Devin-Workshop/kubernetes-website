@@ -5,6 +5,9 @@ $announcement-size-adjustment: 8px;
 
 // For documentation styles, see _documentation.scss
 
+// Import dark mode styles
+@import "dark-mode";
+
 /* GLOBAL */
 .td-main {
   .row {
