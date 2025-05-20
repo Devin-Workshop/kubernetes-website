@@ -27,7 +27,7 @@ Before you start, install the dependencies. Clone the repository and navigate to
 
 ```bash
 git clone https://github.com/kubernetes/website.git
-cd website
+cd kubernetes-website
 ```
 
 The Kubernetes website uses the [Docsy Hugo theme](https://github.com/google/docsy#readme),
