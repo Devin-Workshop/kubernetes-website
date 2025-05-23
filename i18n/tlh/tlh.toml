@@ -1,0 +1,70 @@
+# i18n strings for the Klingon site.
+# NOTE: Please keep the entries in alphabetical order when editing
+
+# For "and", see [conjunction_1]
+
+[api_reference_title]
+other = "API Qon"
+
+[caution]
+other = "yIqIm:"
+
+[cleanup_heading]
+other = "teHchugh"
+
+[community_github_name]
+other = "GitHub"
+
+[community_slack_name]
+other = "Slack"
+
+[community_twitter_name]
+other = "X (formerly Twitter)"
+
+[community_youtube_name]
+other = "YouTube"
+
+[conjunction_1]
+other = "je"
+
+[docs_label_browse]
+other = "De'vam mIw"
+
+[feedback_heading]
+other = "QIj"
+
+[feedback_no]
+other = "Qo'"
+
+[feedback_question]
+other = "De'vam QaH'a'?"
+
+[feedback_yes]
+other = "HIja'"
+
+[latest_version]
+other = "Hu'tegh version."
+
+[main_by]
+other = "vo'"
+
+[main_cncf_project]
+other = """We are a <a href="https://cncf.io/">CNCF</a> graduated project</p>"""
+
+[main_community_explore]
+other = "nughQeD tu'"
+
+[main_contribute]
+other = "nob"
+
+[main_github_invite]
+other = "Kubernetes Qob chen DaneH'a'?"
+
+[main_kubernetes_features]
+other = "Kubernetes Features"
+
+[main_read_about]
+other = "laD"
+
+[main_read_more]
+other = "latlh laD"

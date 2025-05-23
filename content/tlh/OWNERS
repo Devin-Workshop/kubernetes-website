@@ -1,0 +1,14 @@
+# See the OWNERS docs at https://go.k8s.io/owners
+
+# This is the localization project for Klingon.
+# Teams and members are visible at https://github.com/orgs/kubernetes/teams.
+
+reviewers:
+- sig-docs-tlh-reviews
+
+approvers:
+- sig-docs-tlh-owners
+
+labels:
+- area/localization
+- language/tlh
